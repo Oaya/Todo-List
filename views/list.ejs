@@ -17,12 +17,12 @@
         </h1>
     </div>
     <div class="box">
-        <% for(let i=0; newLists.length> i; i++){ %>
+        <% newLists.forEach(function(newList){ %>
             <div class="item">
                 <input type="checkbox">
-                <p><%= newLists[i] %></p>
+                <p><%= newList %></p>
             </div>
-        <% } %>  
+        <% }) %>  
             <form action="/" method="post">
 
                 <input type="text" name="newItem" id="" placeholder="ADD LIST">

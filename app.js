@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    let today = date();
+    let today = date.getDate();
     res.render("list", {listTitle: today,  newLists :newLists})
 })
 app.post("/", (req, res) => {
